@@ -1,0 +1,287 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  <meta property="qc:admins" content="465267610762567726375">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>PHP 简介 | 菜鸟教程</title>
+
+  <link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="canonical" href="http://www.runoob.com/php/php-intro.html">
+<meta name="keywords" content="PHP 简介">
+<meta name="description" content="PHP 简介   PHP 是服务器端脚本语言。  您应当具备的基础知识 在继续学习之前，您需要对以下知识有基本的了解：  HTML 	CSS  如果您希望首先学习这些项目，请在我们的 首页 访问这些教程。  PHP 是什么？  PHP（全称：PHP：Hypertext Preprocessor，即“PHP：超文本预处理器”）是一种通用开源脚本语言。  PHP 脚本在服务器上执行。 PHP 可免费下载使用。     PHP 对初学者而言简..">
+		
+	<link rel="shortcut icon" href="http://www.runoob.com/favicon.ico" mce_href="http://www.runoob.com/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./HTML_files/style.css" type="text/css" media="all">	
+	<link rel="stylesheet" href="./HTML_files/font-awesome.min.css" media="all">	
+  <script src="//push.zhanzhang.baidu.com/push.js"></script><script src="//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4"></script><script src="//push.zhanzhang.baidu.com/push.js"></script><script src="//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4"></script><script src="//push.zhanzhang.baidu.com/push.js"></script><script src="//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4"></script><script src="./HTML_files/push.js"></script><script src="./HTML_files/hm.js"></script><script src="./HTML_files/ca-pub-5751451760833794.js"></script><script src="./HTML_files/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+     <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="apple-touch-icon" href="http://static.runoob.com/images/icon/mobile-icon.png">
+  <meta name="apple-mobile-web-app-title" content="菜鸟教程">
+<link rel="stylesheet" type="text/css" href="./HTML_files/prettify.css"></head>
+<body>
+<!--  头部 -->
+
+
+
+<!-- 导航栏 -->
+<!-- 导航栏 -->
+<!--  内容  -->
+<div class="container main">
+	<!-- 中间 -->
+	<div class="row">
+	
+	<div class="col middle-column">
+		
+	
+	<div class="article">
+			
+		
+		<div class="article-body">
+		
+			
+		</div>
+		
+		
+		
+		
+		
+	</div>
+</div>
+	
+
+
+</div>
+
+</div>
+
+<script>
+var aid = 655;
+var uid = 0;
+var url = '/wp-content/themes/runoob/option/user/userinfo.php';
+
+
+$(function() {
+	$.post( url, {aid:aid, action:"collarticle", opt:'init'}, function( data ) {
+  		if(data.error==0) {
+  			$("#content").find("h1:first").append(data.msg);
+  		}
+	},'json');
+})
+
+function coll() {
+	$.post( url, {aid:aid, action:"collarticle", opt:'add'},function( data ) {
+  		if(data.error==0) {
+	  		$("#content").find("h1:first").find("a").attr("href","javascript:void(0);");
+	  		$("#content").find("h1:first").find("img").attr("src","http://www.runoob.com/wp-content/themes/runoob/assets/img/coll2.png").css({width:32+"px",height:32+"px"});
+  		}
+  		alert(data.msg);
+	 },'json');
+}
+
+</script>
+
+
+<!-- 反馈对话框开始 -->
+
+<!-- 反馈对话框结束 -->
+
+<script type="text/javascript" src="./HTML_files/jquery.htmlfeedback.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// 初始化
+	$("body").htmlfeedback({
+		onShow: function() {
+			$("#htmlfeedback-close").show();
+			$("#htmlfeedback-container-more").show("fast").addClass("expanded");	
+			$("#htmlfeedback-info").html('<i class="fa fa-comments-o" aria-hidden="true"></i> 我的建议');
+			$("#htmlfeedback-more").css({"background-color":"#96b97d"});
+			$("#htmlfeedback-submit").prop('disabled',false);
+		},
+		onHide: function() {
+			$("#htmlfeedback-close").hide();
+			$("#htmlfeedback-container-more").hide("fast").removeClass("expanded");	
+		},
+		onPreRender: function() {
+		    $("#htmlfeedback-container").hide();
+	    },
+	    onPostRender: function(canvas) {
+		    $("#htmlfeedback-container").show();
+	    }
+	});
+	
+	// 显示隐藏反馈对话框
+	$("#htmlfeedback-more").click(function() {
+		$("body").htmlfeedback("toggle");
+		
+	});
+	
+	// 重置反馈
+	$("#htmlfeedback-reset").click(function() {
+		$("body").htmlfeedback("reset");
+	});
+	$("#is-screenshots").change(function(e) {
+		if($('#is-screenshots').attr('checked')) {
+			$('#screenshots').show();
+		} else {
+			$('#screenshots').hide();
+		}
+	});
+	// 上传到服务器
+	$("#htmlfeedback-form").submit(function(e) {
+		e.preventDefault();
+    	if($('#is-screenshots').attr('checked')) {
+			$("#htmlfeedback-info").html('<i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> 反馈信息提交中……');
+			$("#htmlfeedback-more").css({"background-color":"#ffa52e"});
+			$("body").htmlfeedback("upload", {
+				data: {
+					"description": $("#htmlfeedback-input-description").val(),
+					"post_id" : 655,
+					"fb_email" : $("#feedback_email").val()
+				},
+				url: "/feedback/feedback.php",
+				dataType: "json",
+				success:function(result){
+					if(result.flag==0) {
+						$("#htmlfeedback-info").html('<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 抱歉，提交失败：' + result.msg);
+					} else {
+						$("#htmlfeedback-info").html("您的意见我们已经收到了，谢谢！");
+						$("body").htmlfeedback("hide");
+					}
+				}
+			});
+		} else {
+			$("#htmlfeedback-more").css({"background-color":"#ffa52e"});
+			$.post(
+				"/feedback/feedback.php",
+				{"description": $("#htmlfeedback-input-description").val(),"post_id" : 655,"fb_email" : $("#feedback_email").val()},
+				function(result){
+					if(result.flag==0) {
+						$("#htmlfeedback-info").html('<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> 抱歉，提交失败：' + result.msg);
+					} else {
+						$("#htmlfeedback-submit").prop('disabled',true);
+						$("#htmlfeedback-info").html("您的意见我们已经收到了，谢谢！");
+						$("body").htmlfeedback("hide");
+					}
+				},
+				"json"
+			)
+		}
+	});
+	
+	// 背景颜色设置
+	$("input[name='marker']").change(function() {
+		$("body").htmlfeedback('color', $("input[name='marker']:checked").val());	
+	});
+});
+</script>
+
+<!-- 底部 -->
+
+
+
+  
+<div style="display:none;">
+  <script src="./HTML_files/stat.php" language="JavaScript"></script><script src="http://c.cnzz.com/core.php?web_id=5578006&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><script src="http://c.cnzz.com/core.php?web_id=5578006&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><script src="http://c.cnzz.com/core.php?web_id=5578006&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><script src="./HTML_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</div>
+<script>
+window.jsui={
+    www: 'http://wwww.runoob.com',
+    uri: 'http://www.runoob.com/wp-content/themes/runoob'
+};
+</script>
+<style>
+ol,ul{list-style:none}.cd-switcher a{text-decoration:none;outline:0}.cd-switcher a:hover{text-decoration:underline}a:focus{outline:0;-moz-outline:0}.main_nav{width:300px;height:60px;margin:60px auto 10px auto}.main_nav li{float:left;width:60px;margin-right:10px;font-size:16px;padding:.6em 1em;border-radius:3em;background:#2f889a;text-align:center}.main_nav li a{color:#fff}.errtip{background-color:#fceaea;color:#db5353;padding:8px 15px;font-size:14px;border:1px solid #fc9797;border-radius:5px}.cd-user-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(52,54,66,0.9);z-index:3;overflow-y:auto;cursor:pointer;visibility:hidden;opacity:0;-webkit-transition:opacity .3s 0,visibility 0 .3s;-moz-transition:opacity .3s 0,visibility 0 .3s;transition:opacity .3s 0,visibility 0 .3s}.cd-user-modal.is-visible{visibility:visible;opacity:1;-webkit-transition:opacity .3s 0,visibility 0 0;-moz-transition:opacity .3s 0,visibility 0 0;transition:opacity .3s 0,visibility 0 0}.cd-user-modal.is-visible .cd-user-modal-container{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0)}.cd-user-modal-container{position:relative;width:90%;max-width:500px;background:#FFF;margin:3em auto 4em;cursor:auto;border-radius:.25em;-webkit-transform:translateY(-30px);-moz-transform:translateY(-30px);-ms-transform:translateY(-30px);-o-transform:translateY(-30px);transform:translateY(-30px);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;transition-property:transform;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;transition-duration:.3s}.cd-user-modal-container .cd-switcher:after{content:"";display:table;clear:both}.cd-user-modal-container .cd-switcher li{width:50%;float:left;text-align:center}.cd-user-modal-container .cd-switcher li:first-child a{border-radius:.25em 0 0 0}.cd-user-modal-container .cd-switcher li:last-child a{border-radius:0 .25em 0 0}.cd-user-modal-container .cd-switcher a{font-size:1.2em;font-weight:bold;display:block;width:100%;height:50px;line-height:50px;background:#e8f1e2;color:#96b880}.cd-user-modal-container .cd-switcher a.selected{background:#FFF;color:#505260}@media only screen and (min-width:600px){.cd-user-modal-container{margin:4em auto}.cd-user-modal-container .cd-switcher a{height:70px;line-height:70px}}.cd-form{padding:1.4em}.cd-form .fieldset{position:relative;margin:1.4em 0}.cd-form .fieldset:first-child{margin-top:0}.cd-form .fieldset:last-child{margin-bottom:0}.cd-form label{font-size:16px;font-size:.875rem}.cd-form label.image-replace{display:inline-block;position:absolute;left:15px;top:50%;bottom:auto;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);height:20px;width:20px;overflow:hidden;text-indent:100%;white-space:nowrap;color:transparent;text-shadow:none;background-repeat:no-repeat;background-position:50% 0}.cd-form label.cd-username{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-username.svg")}.cd-form label.cd-email{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-email.svg")}.cd-form label.cd-password{background-image:url("/wp-content/themes/runoob/assets/img/cd-icon-password.svg")}.cd-form input{margin:0;padding:0;border-radius:.25em}.cd-form input.full-width{width:80%}.cd-form input.full-width2{width:94%}.cd-form input.has-padding{padding:12px 20px 12px 50px}.cd-form input.has-border{border:1px solid #d2d8d8;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}.cd-form input.has-border:focus{border-color:#98b880;box-shadow:0 0 5px rgba(52,54,66,0.1);outline:0}.cd-form input.has-error{border:1px solid #d76666}.cd-form input[type=password]{padding-right:65px}.cd-form input[type=submit]{padding:16px 0;cursor:pointer;background:#96b97d;color:#FFF;font-weight:bold;border:0;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-size:1.2em;font-weight:bold}.no-touch .cd-form input[type=submit]:hover,.no-touch .cd-form input[type=submit]:focus{background:#3599ae;outline:0}@media only screen and (min-width:600px){.cd-form{padding:2em}.cd-form .fieldset{margin:2em 0}.cd-form .fieldset:first-child{margin-top:0}.cd-form .fieldset:last-child{margin-bottom:0}.cd-form input.has-padding{padding:16px 20px 16px 50px}.cd-form input[type=submit]{padding:16px 0}}.cd-close-form{display:block;position:absolute;width:40px;height:40px;right:0;top:-40px;background:url("/wp-content/themes/runoob/assets/img/cd-icon-close.svg") no-repeat center center;text-indent:100%;white-space:nowrap;overflow:hidden}@media only screen and (min-width:1170px){}#cd-login,#cd-signup,#cd-reset-password{display:none}#cd-login.is-selected,#cd-signup.is-selected,#cd-reset-password.is-selected{display:block}
+</style>
+<div class="cd-user-modal"> 
+	<div class="cd-user-modal-container">
+		<ul class="cd-switcher">
+			<li><a href="javascript:;">用户登录</a></li>
+			<li><a href="javascript:;">注册新用户</a></li>
+		</ul>
+
+		<div id="cd-login"> <!-- 登录表单 -->
+			<div class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-username" for="signin-username">用户名</label>
+					<input class="full-width has-padding has-border" id="signin-username" name="username" type="text" placeholder="输入用户名">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signin-password">密码</label>
+					<input class="full-width has-padding has-border" id="signin-password" name="password" type="password" placeholder="输入密码">
+				</p>
+				
+				<p class="fieldset">
+					<input type="checkbox" id="remember-me" checked="">
+					<label for="remember-me">记住登录状态</label>
+          <a href="http://www.runoob.com/reset-password" style="float: right;padding-right: 20px;" target="_blank">忘记密码？</a>
+				</p>
+ 				<input type="hidden" name="action" value="signin">
+				<p class="fieldset">
+					<input class="full-width2" type="submit" value="登 录">
+				</p>
+        <div class="err-msg"></div>
+			</div>
+		</div>
+
+		<div id="cd-signup"> <!-- 注册表单 -->
+			<div class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="verifycode">邀请码</label>
+					<input class="full-width has-padding has-border" id="signup-verifycode" name="verifycode" type="text" placeholder="输入邀请码">
+				</p>
+				<p class="fieldset">
+					<label class="image-replace cd-username" for="signup-username">用户名</label>
+					<input class="full-width has-padding has-border" id="signup-username" name="name" type="text" placeholder="输入用户名">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-email" for="signup-email">邮箱</label>
+					<input class="full-width has-padding has-border" name="email" id="signup-email" type="email" placeholder="输入mail">
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signup-password">密码</label>
+					<input class="full-width has-padding has-border" id="signup-password" name="password" type="password" placeholder="输入密码">
+				</p>
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signup-password">重复输入密码</label>
+					<input class="full-width has-padding has-border" id="signup-password" name="password2" type="password" placeholder="重复输入密码">
+				</p>
+				
+				<!-- 
+				<p class="fieldset">
+					<input type="checkbox" id="accept-terms">
+					<label for="accept-terms">我已阅读并同意 <a href="javascript:;">用户协议</a></label>
+				</p>
+				 -->
+				 
+				 <input type="hidden" name="action" value="signup">
+				<p class="fieldset">
+					<input class="full-width2" type="submit" value="注册新用户">
+				</p>
+				<p class="fieldset">
+				  <a href="http://www.runoob.com/w3cnote/runoob-user-test-intro.html" target="_blank">如何获取邀请码？</a>
+				  </p>
+				<div class="err-msg"></div>
+			</div>
+
+		</div>
+
+		<a href="javascript:;" class="cd-close-form">关闭</a>
+	</div>
+</div> 
+<script src="./HTML_files/main.js"></script>
+
+
+<canvas width="1920" height="2820" style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 4900; -webkit-user-select: none; display: none;"></canvas><div style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 5000; -webkit-user-select: none; display: none; width: 1920px; height: 2820px; background-color: rgba(0, 0, 0, 0);"></div><canvas width="1362" height="2821" style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 4900; -webkit-user-select: none; display: none;"></canvas><div style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 5000; -webkit-user-select: none; display: none; width: 1362px; height: 2821px; background-color: rgba(0, 0, 0, 0);"></div><canvas width="1362" height="1281" style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 4900; -webkit-user-select: none; display: none;"></canvas><div style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 5000; -webkit-user-select: none; display: none; width: 1362px; height: 1281px; background-color: rgba(0, 0, 0, 0);"></div><canvas width="1362" height="1209" style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 4900; -webkit-user-select: none; display: none;"></canvas><div style="position: absolute; top: 0px; left: 0px; margin: 0px; z-index: 5000; -webkit-user-select: none; display: none; width: 1362px; height: 1209px; background-color: rgba(0, 0, 0, 0);"></div></body></html>

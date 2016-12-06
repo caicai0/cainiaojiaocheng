@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B6E4F1D1DB60CE6008D1BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F1C1DB60CE6008D1BC0 /* AppDelegate.swift */; };
+		4B6E4F1F1DB60CE6008D1BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F1E1DB60CE6008D1BC0 /* ViewController.swift */; };
+		4B6E4F221DB60CE6008D1BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E4F201DB60CE6008D1BC0 /* Main.storyboard */; };
+		4B6E4F241DB60CE6008D1BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E4F231DB60CE6008D1BC0 /* Assets.xcassets */; };
+		4B6E4F271DB60CE6008D1BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E4F251DB60CE6008D1BC0 /* LaunchScreen.storyboard */; };
+		4B6E4F321DB60CE6008D1BC0 /* CAINIAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F311DB60CE6008D1BC0 /* CAINIAOTests.swift */; };
+		4B6E4F3D1DB60CE6008D1BC0 /* CAINIAOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F3C1DB60CE6008D1BC0 /* CAINIAOUITests.swift */; };
+		4B6E4F4F1DB613B8008D1BC0 /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F4E1DB613B8008D1BC0 /* ChapterViewController.swift */; };
+		4B6E4F511DB61502008D1BC0 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E4F501DB61502008D1BC0 /* PageViewController.swift */; };
+		4B6E4F531DB61798008D1BC0 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E4F521DB61798008D1BC0 /* db.sqlite */; };
+		4B6E500A1DB61F31008D1BC0 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6E50091DB61F31008D1BC0 /* SQLite.framework */; };
+		4B6E500C1DB61F3F008D1BC0 /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B6E50091DB61F31008D1BC0 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B97E2611DF64C5D00E06FFB /* www in Resources */ = {isa = PBXBuildFile; fileRef = 4B97E2601DF64C5D00E06FFB /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B6E4F2E1DB60CE6008D1BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6E4F111DB60CE6008D1BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B6E4F181DB60CE6008D1BC0;
+			remoteInfo = CAINIAO;
+		};
+		4B6E4F391DB60CE6008D1BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B6E4F111DB60CE6008D1BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B6E4F181DB60CE6008D1BC0;
+			remoteInfo = CAINIAO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B6E4F4C1DB60E87008D1BC0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B6E500C1DB61F3F008D1BC0 /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B6E4F191DB60CE6008D1BC0 /* CAINIAO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAINIAO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6E4F1C1DB60CE6008D1BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B6E4F1E1DB60CE6008D1BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B6E4F211DB60CE6008D1BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B6E4F231DB60CE6008D1BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B6E4F261DB60CE6008D1BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B6E4F281DB60CE6008D1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6E4F2D1DB60CE6008D1BC0 /* CAINIAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAINIAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6E4F311DB60CE6008D1BC0 /* CAINIAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAINIAOTests.swift; sourceTree = "<group>"; };
+		4B6E4F331DB60CE6008D1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6E4F381DB60CE6008D1BC0 /* CAINIAOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAINIAOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6E4F3C1DB60CE6008D1BC0 /* CAINIAOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAINIAOUITests.swift; sourceTree = "<group>"; };
+		4B6E4F3E1DB60CE6008D1BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B6E4F4E1DB613B8008D1BC0 /* ChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
+		4B6E4F501DB61502008D1BC0 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		4B6E4F521DB61798008D1BC0 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		4B6E4F551DB618EC008D1BC0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4B6E50091DB61F31008D1BC0 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SQLite.framework; sourceTree = "<group>"; };
+		4B97E2601DF64C5D00E06FFB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B6E4F161DB60CE6008D1BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6E500A1DB61F31008D1BC0 /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F2A1DB60CE6008D1BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F351DB60CE6008D1BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B6E4F101DB60CE6008D1BC0 = {
+			isa = PBXGroup;
+			children = (
+				4B6E4F1B1DB60CE6008D1BC0 /* CAINIAO */,
+				4B6E4F301DB60CE6008D1BC0 /* CAINIAOTests */,
+				4B6E4F3B1DB60CE6008D1BC0 /* CAINIAOUITests */,
+				4B6E4F1A1DB60CE6008D1BC0 /* Products */,
+				4B6E4F541DB618EC008D1BC0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B6E4F1A1DB60CE6008D1BC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E4F191DB60CE6008D1BC0 /* CAINIAO.app */,
+				4B6E4F2D1DB60CE6008D1BC0 /* CAINIAOTests.xctest */,
+				4B6E4F381DB60CE6008D1BC0 /* CAINIAOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B6E4F1B1DB60CE6008D1BC0 /* CAINIAO */ = {
+			isa = PBXGroup;
+			children = (
+				4B97E2601DF64C5D00E06FFB /* www */,
+				4B6E50091DB61F31008D1BC0 /* SQLite.framework */,
+				4B6E4F521DB61798008D1BC0 /* db.sqlite */,
+				4B6E4F1C1DB60CE6008D1BC0 /* AppDelegate.swift */,
+				4B6E4F1E1DB60CE6008D1BC0 /* ViewController.swift */,
+				4B6E4F201DB60CE6008D1BC0 /* Main.storyboard */,
+				4B6E4F231DB60CE6008D1BC0 /* Assets.xcassets */,
+				4B6E4F251DB60CE6008D1BC0 /* LaunchScreen.storyboard */,
+				4B6E4F281DB60CE6008D1BC0 /* Info.plist */,
+				4B6E4F4E1DB613B8008D1BC0 /* ChapterViewController.swift */,
+				4B6E4F501DB61502008D1BC0 /* PageViewController.swift */,
+			);
+			path = CAINIAO;
+			sourceTree = "<group>";
+		};
+		4B6E4F301DB60CE6008D1BC0 /* CAINIAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E4F311DB60CE6008D1BC0 /* CAINIAOTests.swift */,
+				4B6E4F331DB60CE6008D1BC0 /* Info.plist */,
+			);
+			path = CAINIAOTests;
+			sourceTree = "<group>";
+		};
+		4B6E4F3B1DB60CE6008D1BC0 /* CAINIAOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E4F3C1DB60CE6008D1BC0 /* CAINIAOUITests.swift */,
+				4B6E4F3E1DB60CE6008D1BC0 /* Info.plist */,
+			);
+			path = CAINIAOUITests;
+			sourceTree = "<group>";
+		};
+		4B6E4F541DB618EC008D1BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E4F551DB618EC008D1BC0 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B6E4F181DB60CE6008D1BC0 /* CAINIAO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6E4F411DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAO" */;
+			buildPhases = (
+				4B6E4F151DB60CE6008D1BC0 /* Sources */,
+				4B6E4F161DB60CE6008D1BC0 /* Frameworks */,
+				4B6E4F171DB60CE6008D1BC0 /* Resources */,
+				4B6E4F4C1DB60E87008D1BC0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAINIAO;
+			productName = CAINIAO;
+			productReference = 4B6E4F191DB60CE6008D1BC0 /* CAINIAO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B6E4F2C1DB60CE6008D1BC0 /* CAINIAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6E4F441DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAOTests" */;
+			buildPhases = (
+				4B6E4F291DB60CE6008D1BC0 /* Sources */,
+				4B6E4F2A1DB60CE6008D1BC0 /* Frameworks */,
+				4B6E4F2B1DB60CE6008D1BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B6E4F2F1DB60CE6008D1BC0 /* PBXTargetDependency */,
+			);
+			name = CAINIAOTests;
+			productName = CAINIAOTests;
+			productReference = 4B6E4F2D1DB60CE6008D1BC0 /* CAINIAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B6E4F371DB60CE6008D1BC0 /* CAINIAOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B6E4F471DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAOUITests" */;
+			buildPhases = (
+				4B6E4F341DB60CE6008D1BC0 /* Sources */,
+				4B6E4F351DB60CE6008D1BC0 /* Frameworks */,
+				4B6E4F361DB60CE6008D1BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B6E4F3A1DB60CE6008D1BC0 /* PBXTargetDependency */,
+			);
+			name = CAINIAOUITests;
+			productName = CAINIAOUITests;
+			productReference = 4B6E4F381DB60CE6008D1BC0 /* CAINIAOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B6E4F111DB60CE6008D1BC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = liyufeng;
+				TargetAttributes = {
+					4B6E4F181DB60CE6008D1BC0 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3F685LX6UR;
+						ProvisioningStyle = Automatic;
+					};
+					4B6E4F2C1DB60CE6008D1BC0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B6E4F181DB60CE6008D1BC0;
+					};
+					4B6E4F371DB60CE6008D1BC0 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B6E4F181DB60CE6008D1BC0;
+					};
+				};
+			};
+			buildConfigurationList = 4B6E4F141DB60CE6008D1BC0 /* Build configuration list for PBXProject "CAINIAO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B6E4F101DB60CE6008D1BC0;
+			productRefGroup = 4B6E4F1A1DB60CE6008D1BC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B6E4F181DB60CE6008D1BC0 /* CAINIAO */,
+				4B6E4F2C1DB60CE6008D1BC0 /* CAINIAOTests */,
+				4B6E4F371DB60CE6008D1BC0 /* CAINIAOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B6E4F171DB60CE6008D1BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6E4F271DB60CE6008D1BC0 /* LaunchScreen.storyboard in Resources */,
+				4B6E4F241DB60CE6008D1BC0 /* Assets.xcassets in Resources */,
+				4B6E4F221DB60CE6008D1BC0 /* Main.storyboard in Resources */,
+				4B97E2611DF64C5D00E06FFB /* www in Resources */,
+				4B6E4F531DB61798008D1BC0 /* db.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F2B1DB60CE6008D1BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F361DB60CE6008D1BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B6E4F151DB60CE6008D1BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6E4F1F1DB60CE6008D1BC0 /* ViewController.swift in Sources */,
+				4B6E4F1D1DB60CE6008D1BC0 /* AppDelegate.swift in Sources */,
+				4B6E4F4F1DB613B8008D1BC0 /* ChapterViewController.swift in Sources */,
+				4B6E4F511DB61502008D1BC0 /* PageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F291DB60CE6008D1BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6E4F321DB60CE6008D1BC0 /* CAINIAOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6E4F341DB60CE6008D1BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6E4F3D1DB60CE6008D1BC0 /* CAINIAOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B6E4F2F1DB60CE6008D1BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B6E4F181DB60CE6008D1BC0 /* CAINIAO */;
+			targetProxy = 4B6E4F2E1DB60CE6008D1BC0 /* PBXContainerItemProxy */;
+		};
+		4B6E4F3A1DB60CE6008D1BC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B6E4F181DB60CE6008D1BC0 /* CAINIAO */;
+			targetProxy = 4B6E4F391DB60CE6008D1BC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B6E4F201DB60CE6008D1BC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B6E4F211DB60CE6008D1BC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B6E4F251DB60CE6008D1BC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B6E4F261DB60CE6008D1BC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B6E4F3F1DB60CE6008D1BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B6E4F401DB60CE6008D1BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B6E4F421DB60CE6008D1BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3F685LX6UR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAINIAO",
+				);
+				INFOPLIST_FILE = CAINIAO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4B6E4F431DB60CE6008D1BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3F685LX6UR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAINIAO",
+				);
+				INFOPLIST_FILE = CAINIAO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4B6E4F451DB60CE6008D1BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CAINIAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAINIAO.app/CAINIAO";
+			};
+			name = Debug;
+		};
+		4B6E4F461DB60CE6008D1BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CAINIAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAINIAO.app/CAINIAO";
+			};
+			name = Release;
+		};
+		4B6E4F481DB60CE6008D1BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CAINIAOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CAINIAO;
+			};
+			name = Debug;
+		};
+		4B6E4F491DB60CE6008D1BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CAINIAOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAINIAOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CAINIAO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B6E4F141DB60CE6008D1BC0 /* Build configuration list for PBXProject "CAINIAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6E4F3F1DB60CE6008D1BC0 /* Debug */,
+				4B6E4F401DB60CE6008D1BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6E4F411DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6E4F421DB60CE6008D1BC0 /* Debug */,
+				4B6E4F431DB60CE6008D1BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6E4F441DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6E4F451DB60CE6008D1BC0 /* Debug */,
+				4B6E4F461DB60CE6008D1BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B6E4F471DB60CE6008D1BC0 /* Build configuration list for PBXNativeTarget "CAINIAOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B6E4F481DB60CE6008D1BC0 /* Debug */,
+				4B6E4F491DB60CE6008D1BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B6E4F111DB60CE6008D1BC0 /* Project object */;
+}
